@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inOut" >
+        <div class="outBox" id="outBox">
+          <ul id="msgBox"></ul>
+        </div>
+        <div id="inBox">
+            <input type="text" id="typeBox" placeholder="Message" onclick="openKeyboard()">
+            <button id="sendMsg" onclick="writeMsg()">Send</button>
+        </div>
+        </div>
+        <div id="keyboard" class="keyboard">
+            <table border="1px">
+                
+                <tr>
+                  <td onclick="getNumber('1')">1</td>
+                  <td onclick="getNumber('2')">2</td>
+                  <td onclick="getNumber('3')">3</td>
+                  <td onclick="getNumber('4')">4</td>
+                  <td onclick="getNumber('5')">5</td>
+                  <td onclick="getNumber('6')">6</td>
+                  <td onclick="getNumber('7')">7</td>
+                  <td onclick="getNumber('8')">8</td>
+                  <td onclick="getNumber('9')">9</td>
+                  <td onclick="getNumber('0')">0</td>
+                </tr>
+                <tr>
+                    <td onclick="getNumber('q')">Q</td>
+                    <td onclick="getNumber('w')">W</td>
+                    <td onclick="getNumber('e')">E</td>
+                    <td onclick="getNumber('r')">R</td>
+                    <td onclick="getNumber('t')">T</td>
+                    <td onclick="getNumber('y')">Y</td>
+                    <td onclick="getNumber('u')">U</td>
+                    <td onclick="getNumber('i')">I</td>
+                    <td onclick="getNumber('o')">O</td>
+                    <td onclick="getNumber('p')">P</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td onclick="getNumber('a')">A</td>
+                    <td onclick="getNumber('s')">S</td>
+                    <td onclick="getNumber('d')">D</td>
+                    <td onclick="getNumber('f')">F</td>
+                    <td onclick="getNumber('g')">G</td>
+                    <td onclick="getNumber('h')">H</td>
+                    <td onclick="getNumber('j')">J</td>
+                    <td onclick="getNumber('k')">K</td>
+                    <td onclick="getNumber('l')">L</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td onclick="getNumber('z')">Z</td>
+                    <td onclick="getNumber('x')">X</td>
+                    <td onclick="getNumber('c')">C</td>
+                    <td onclick="getNumber('v')">V</td>
+                    <td onclick="getNumber('b')">B</td>
+                    <td onclick="getNumber('n')">N</td>
+                    <td onclick="getNumber('m')">M</td>
+                    <td onclick="getNumber('</br>')" colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td onclick="getNumber('?')">?</td>
+                    <td onclick="getNumber(',')">,</td>
+                    <td onclick="getNumber('')"></td>
+                    <td  onclick="getNumber(' ')"colspan="5"></td>
+                    <td onclick="getNumber('.')">.</td>
+                    <td></td>
+                  </tr>
+            </table>
+    </div>
+    </div>
+  
+ 
+</body>
+<script src="./app.js"></script>
+</html>
